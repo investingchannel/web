@@ -10,6 +10,7 @@ gem 'rack-cors', require: 'rack/cors'
 
 # MODELS
 gem 'pg', platform: :mri
+gem 'activerecord-postgresql-adapter'
 gem 'activerecord-jdbcpostgresql-adapter', platform: :jruby
 gem 'has_metadata_column', git: 'git://github.com/RISCfuture/has_metadata_column.git'
 gem 'slugalicious'
@@ -64,6 +65,10 @@ group :development do
   gem 'yard', require: nil
   gem 'redcarpet', require: nil, platform: :mri
   gem 'fdoc'
+end
+
+group :production do
+  gem 'ey_config'
 end
 
 
