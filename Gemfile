@@ -9,7 +9,6 @@ gem 'configoro'
 gem 'rack-cors', require: 'rack/cors'
 
 # MODELS
-gem 'activerecord-postgresql-adapter'
 gem 'pg'
 gem 'activerecord-jdbcpostgresql-adapter', platform: :jruby
 gem 'has_metadata_column', git: 'git://github.com/RISCfuture/has_metadata_column.git'
@@ -68,6 +67,7 @@ group :development do
 end
 
 group :production do
+  gem 'activerecord-postgresql-adapter'
   gem 'ey_config'
 end
 
