@@ -10,7 +10,7 @@ gem 'rack-cors', require: 'rack/cors'
 
 # MODELS
 gem 'activerecord-postgresql-adapter'
-gem 'pg', platform: :mri
+gem 'pg'
 gem 'activerecord-jdbcpostgresql-adapter', platform: :jruby
 gem 'has_metadata_column', git: 'git://github.com/RISCfuture/has_metadata_column.git'
 gem 'slugalicious'
