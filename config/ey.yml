@@ -1,0 +1,11 @@
+environments:
+  env_production:
+    migrate: false                            # run migration command on every deploy
+    migration_command: rake db:migrate     # default migration command
+    branch: master                            # default branch to deploy
+    default: true                             # make this environment default
+    copy_exclude:                             # don't rsync the following dirs
+    - .git
+    maintenance_on_restart: false             # show maintenance page during app restart (default: false except for glassfish and mongrel)
+    precompile_assets: true                   # enables rails assets precompilation (default: inferred using app/assets and config/application.rb)
+    
